@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Javascript Fundamentals 3 : Functions</title>
+</head>
+
+<body>
+
+
+
+  <script>
+    //Practice https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/fundamentals-part-3
+    
+    // 1) Write a function called add7 that takes one number and returns that number + 7.
+    
+    let add7 = function (myNumber) {
+      return myNumber + 7;
+    }
+    console.log(add7(2));
+
+    //Same code but arrow function.
+    /*let add7 = (myNumber) => myNumber + 7;
+    console.log(add7(7));*/ 
+
+
+    // 2) Write a function called multiply that takes 2 numbers and returns their product.
+      function multiply(numberA, numberB) {
+      return numberA * numberB;
+    }
+    console.log(multiply(4, 7));
+
+
+    /* 3) Write a function called capitalize that takes a string and returns that string 
+    with only the first letter capitalized. Make sure that it can take strings that are lowercase,
+    UPPERCASE or BoTh.*/
+
+    function capitalize(text) {
+      // 1 sélection de la première lettre avec la fonction 'charAt';
+      // 2 transformation cette lettre avec 'toUpperCase';
+      // 3 affichage de la lettre maintenant majuscule; 
+
+      return ("Je m'appelle " + text.charAt(0).toUpperCase() + text.slice(1));
+    }
+    console.log(capitalize("patrick"));
+
+
+    /* 4) Write a function called lastLetter that takes a string and returns
+    the very last letter of that string:
+    lastLetter("abcd") should return "d"*/
+
+    function lastLetter(text) {
+      return text.charAt(text.length-1);
+    }
+    console.log(lastLetter("anglaise"));
+    
+  </script>
+</body>
+
+</html>
